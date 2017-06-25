@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   	<TextView 
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:text="服务器IP："
+   	    android:textSize="40sp"/>
+   	<EditText
+   	    android:id="@+id/host" 
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:text="123.206.90.213"
+   	    android:textSize="30sp"/>
+   	<TextView 
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:text="端口："
+   	    android:textSize="40sp"/> 
+   	 <EditText 
+   	    android:id="@+id/port"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:text="8000"
+   	    android:hint="8000"
+   	    android:textSize="30sp"/>
+
+   	 <Button
+   	     android:id="@+id/nextBtn"
+   	     android:layout_width="match_parent"
+   	     android:layout_height="60dp"
+   	     android:background="@+drawable/btn"
+   	     android:textColor="#FFFFFF"
+   	     android:textSize="30dp"
+   	     android:text="Next" />
+
+</LinearLayout>

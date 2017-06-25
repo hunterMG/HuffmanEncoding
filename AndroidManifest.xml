@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.huffman"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+    <!-- 联网权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.android.huffman_yg.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.huffman_yg.CodeDisplay"
+            android:label="频率统计及编码" >
+        </activity>
+        <activity
+            android:name="socketmsg.SocketMsgActivity"
+            android:label="Group Chat" >
+        </activity>
+        <activity
+            android:name="socketmsg.SocketConfig"
+            android:label="初始化设置" >
+        </activity>
+        <activity
+            android:name="socketmsg.InitUserActivity"
+            android:label="初始化设置" >
+        </activity>
+        <activity android:name="com.android.huffman_yg.Display"></activity>
+    </application>
+
+</manifest>
